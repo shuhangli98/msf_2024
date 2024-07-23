@@ -5,11 +5,12 @@ Functions related to measurmements
 import numpy as np
 
 
-def calculate_distance(rA, rB):
+def calculate_distance(rA: np.ndarray, 
+                       rB: np.ndarray) -> float: # These hints are purely for developments.
     # This function calculates the distance between two points given as numpy arrays.
     d = rA - rB
     dist = np.linalg.norm(d)
-    return dist
+    return float(dist)
 
 
 def calculate_angle(rA, rB, rC, degrees=False):
@@ -23,3 +24,5 @@ def calculate_angle(rA, rB, rC, degrees=False):
         return np.degrees(theta)
     else:
         return theta
+
+calculate_distance([0,0,0], [0,0,1])
