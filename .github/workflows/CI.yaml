@@ -45,6 +45,8 @@ jobs:
           create-args: >- 
             python=${{ matrix.python-version }}
             numpy
+            matplotlib
+            scipy
 
       - name: Install package
         # conda setup requires this special shell
