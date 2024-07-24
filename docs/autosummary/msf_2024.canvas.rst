@@ -1,0 +1,6 @@
+﻿msf\_2024.canvas
+================
+
+.. currentmodule:: msf_2024
+
+.. autofunction:: canvas

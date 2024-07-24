@@ -1,8 +1,25 @@
 Getting Started
 ===============
 
+Dependencies
+---------------
+To use the package, you need the following dependencies:
 
-You might choose to write an overview tutorial or set of tutorials.
+- Python 3.6 or higher
+- pip
+
+
+Installation
+---------------
+To install the package, run the following command:
+
+.. code-block:: bash
+
+    cd msf_2024
+    pip install -e .
+
+Usage
+---------------
 
 .. code-block:: python
     

@@ -6,6 +6,10 @@
 Welcome to msf_2024's documentation!
 =========================================================
 
+Msf_2024 is a Python package for making waffles.
+It has functions for reading 'xyz' and 'pdb' files.
+Demonstrates best practices for molecule software design.
+
 .. grid:: 1 1 2 2
 
     .. grid-item-card:: Getting Started
