@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+note_sl
+
 # Distribution / packaging
 .Python
 env/
