@@ -44,6 +44,7 @@ jobs:
               - conda-forge
           create-args: >- 
             python=${{ matrix.python-version }}
+            numpy
 
       - name: Install package
         # conda setup requires this special shell

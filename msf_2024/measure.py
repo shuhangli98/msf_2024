@@ -5,8 +5,8 @@ Functions related to measurmements
 import numpy as np
 
 
-def calculate_distance(rA: np.ndarray, 
-                       rB: np.ndarray) -> float: # These hints are purely for developments.
+def calculate_distance(rA: np.ndarray,
+                       rB: np.ndarray) -> float:  # These hints are purely for developments.
     # This function calculates the distance between two points given as numpy arrays.
     d = rA - rB
     dist = np.linalg.norm(d)

@@ -5,13 +5,17 @@ molecule
 from typing import Sequence
 from .measure import calculate_distance
 
-def build_bond_list(coordinates: Sequence[Sequence[float]], 
-                    max_bond: float = 1.5, 
+
+def build_bond_list(coordinates: Sequence[Sequence[float]],
+                    max_bond: float = 1.5,
                     min_bond: float = 0) -> dict[tuple[int, int], float]:
-    
+
     # Find the bonds in a molecule (set of coordinates) based on distance criteria.
     bonds = {}
     num_atoms = len(coordinates)
+
+    if min_bond < 0:
+        raise ValueError(f"min_bond must be greater than 0. Got {min_bond}")
 
     for atom1 in range(num_atoms):
         for atom2 in range(atom1, num_atoms):
